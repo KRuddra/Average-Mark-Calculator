@@ -1,0 +1,16 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var studentNum = parseInt(prompt("How many students are there?"));
+            var mark = 0
+            for(i = 1; i <= studentNum; i += 1){
+                var studentMark = parseFloat(prompt("What is the mark of student " + i + "?"))
+                var mark = mark + studentMark
+            }
+            var average = mark / studentNum
+            document.write("The class average is: " + average + "%")
+        </script>
+    </body>
+</html>
